@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <properties>
+  	<!-- avoid [WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent! 
+	  https://maven.apache.org/general.html#encoding-warning
+	-->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<modelVersion>4.0.0</modelVersion>
+    <groupId>com</groupId>
+    <artifactId>hello-world</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 
+	Эти три строки являются идентификатором программы для внешнего мира. Программа, она же результат работы по сборке проекта, в терминологии maven называется артефактом.
+	Непонятное слово артефакт используется здесь вместо понятного слова программа потому, что результатом работы системы сборки может быть не только собственно программа, но и библиотека или ещё что-нибудь эдакое. Комбинация параметров groupId, artifactId и version уникальна для каждого артефакта. Об уникальности этой комбинации должен позаботиться программист.
+	Технически, значения этих параметров могут быть любыми, но при их выборе строго рекомендуется соблюдать правила хорошего тона.
+	groupId
+	В groupId обычно находится название какого-нибудь пакета. Напомню, что название пакета согласно тем же правилам хорошего тона, должно быть именем веб-домена, владельцем которого является автор пакета, что позволяет худо-бедно обеспечить уникальность названия.
+	artifactId
+	В artifactId — строка с именем артефакта, которое придумывает его создатель. Как правило это какое-нибудь слово, иногда с разделителями в виде тире. Например hibernate-annotation-wat. artifactId должны быть уникальны в рамках groupId.
+	version
+	Ну и наконец version это версия артефакта, которую надо увеличивать при каждом более-менее значительном изменении. Версия обычно включает цифрры и буквы. Типа 1.0-SNAPSHOT
+	-->
+</project>
